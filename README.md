@@ -1,5 +1,10 @@
 # Final Project and Deployment
 
+
+
+# UPDATE: SITE LINK - https://thebookhavenbykc.netlify.app/
+
+
 ## Objectives
 Build a fully functional web application.
 Apply HTML, CSS, and JavaScript concepts learned.
