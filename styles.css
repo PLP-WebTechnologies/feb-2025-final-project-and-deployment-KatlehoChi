@@ -1,0 +1,303 @@
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #F5DEB3; /* Beige */
+    color: #5B3A29; /* Warm Brown */
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    background-color: #D2B48C; /* Tan */
+    padding: 20px;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #5B3A29;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #8B4513; /* Darker Brown */
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease-in, transform 1.5s ease-in;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.book img {
+    width: 200px; /* Set a uniform size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Slightly rounded corners for a softer look */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Elegant shadow effect */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.book img:hover {
+    transform: scale(1.05); /* Slight zoom-in on hover */
+}
+
+
+.book-news {
+    background-color: #F5DEB3; /* Beige */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.news-item {
+    margin-bottom: 20px;
+}
+
+.news-item h3 {
+    color: #8B4513; /* Brown */
+}
+
+.news-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.news-item li {
+    padding: 5px;
+    font-size: 18px;
+}
+
+
+footer {
+    background-color: #8B4513; /* Dark brown */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-image {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-image:hover {
+    transform: rotate(10deg) scale(1.1); /* Fun hover effect */
+}
+
+footer nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+footer nav ul li a:hover {
+    color: #D2B48C; /* Tan hover effect */
+}
+
+.header {
+    position: relative;
+    background-image: url("images/header-image.jpg"); /* Add your image */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6); /* Dark transparent overlay */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.overlay h1 {
+    font-size: 36px;
+    color: white;
+}
+
+.overlay p {
+    font-size: 18px;
+    color: white;
+}
+
+
+.quote-box, .reading-challenge, .newsletter {
+    background-color: #F5DEB3; /* Beige */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.newsletter form input {
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+}
+
+.newsletter form button {
+    background-color: #8B4513;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.newsletter form button:hover {
+    background-color: #5B3A29;
+}
+
+
+/* Book Quote Section */
+.quote-box {
+    background-color: #F5DEB3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out; /* Smooth animation */
+}
+
+.quote-box:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Reading Challenge */
+.reading-challenge {
+    background-color: #D2B48C;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.reading-challenge:hover {
+    background-color: #8B4513; /* Darker shade on hover */
+    color: white;
+}
+
+/* Newsletter Signup */
+.newsletter {
+    background-color: #F5DEB3;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.newsletter:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Newsletter Form Button */
+.newsletter form button {
+    background-color: #8B4513;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.newsletter form button:hover {
+    background-color: #5B3A29;
+    transform: scale(1.1); /* Button enlarges slightly on hover */
+}
+
+
+
+.header {
+    background-image: url("images/contact-header.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+}
+
+.contact-box {
+    background-color: #F5DEB3;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.contact-box form input,
+.contact-box form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.contact-box form button {
+    background-color: #8B4513;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.contact-box form button:hover {
+    background-color: #5B3A29;
+    transform: scale(1.1);
+}
+
+/* Contact Page Image Section */
+.contact-image img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
